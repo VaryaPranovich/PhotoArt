@@ -1,0 +1,5 @@
+commit be26d503a367242c325c28b8b291921afdffe4f0 (HEAD -> master)
+Author: Varvara <varvara2096502@gmail.com>
+Date:   Mon Feb 12 19:36:56 2018 +0300
+
+    add .gitignore
