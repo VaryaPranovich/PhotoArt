@@ -1,5 +1,23 @@
-commit be26d503a367242c325c28b8b291921afdffe4f0 (HEAD -> master)
+commit 180a375e251e192510e04b674fb964b0813d15ff (HEAD -> lab3, origin/lab3)
 Author: Varvara <varvara2096502@gmail.com>
-Date:   Mon Feb 12 19:36:56 2018 +0300
+Date:   Mon Feb 26 20:58:41 2018 +0300
 
-    add .gitignore
+    new css and html files
+
+commit 08d6a1464070624326fa9205ce47015558812191 (origin/lab2, lab2)
+Author: Varvara <varvara2096502@gmail.com>
+Date:   Sun Feb 25 20:56:35 2018 +0300
+
+    createdmockup
+
+commit a8d48f95cd2637aec63eb5ca7a3011bc7812b1f2 (origin/master, master)
+Author: Varvara <varvara2096502@gmail.com>
+Date:   Mon Feb 12 19:45:16 2018 +0300
+
+    changed status.txt
+
+commit bb2c7658691c0a2dc7dce1dc0638bb2408be7d19
+Author: Varvara <varvara2096502@gmail.com>
+Date:   Mon Feb 12 19:40:21 2018 +0300
+
+    add log
