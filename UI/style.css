@@ -4,14 +4,30 @@
     top: 15px;
     left: 21.5em;
 }
+.textComment{
+    color: lavenderblush;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+    float: left;
+
+}
+.like{
+    color: #e3bd8c;
+    font-size: 15px;
+    witdh: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 0px;
+    float: left;
+}
 .thumb{
-    position:relative;
+    /*position:relative;*/
     top: 10px;
 
 }
 .LoadButton{
     position: fixed;
-    top: 2700px;
+    top: 5500px;
     left: 1100px;
     z-index: 2;
 }
@@ -66,6 +82,15 @@ p{
     top: 50px;
     left:53em;
 }
+
+.post{
+    width: 500px;
+    height: 480px;
+    margin-left: 85%;
+    margin-bottom: 50px;
+    padding-top: 5px;
+}
+
 .search input {
     border: none;
 }
