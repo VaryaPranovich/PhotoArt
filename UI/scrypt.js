@@ -278,7 +278,7 @@
 
     var filerFound = {
         author: 'Varya',
-        hashtags: ['картошка', 'супчик'],
+        hashtags: ['природа', 'еда'],
     }
 
     var pp = getPhotoPost(20);
