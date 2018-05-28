@@ -1,9 +1,5 @@
-(function(){
-    function compareDates(a, b) {
-        return b.createdAt - a.createdAt;
-    }
 
-    var photoPosts = [
+   var photoPosts = [/*
         {
             id: '1',
             description: 'Искусство',
@@ -14,7 +10,7 @@
         },
         {
             id: '2',
-            description: 'Город',
+            description: 'Town',
             createdAt: new Date(),
             author: 'Varya',
             photoLink: 'AEB2sCWYZ0w.jpg',
@@ -23,7 +19,7 @@
         },
         {
             id: '3',
-            description: 'Море',
+            description: 'Sea',
             createdAt: new Date(),
             author: 'Varya',
             photoLink: 'bjuagw3klA0.jpg',
@@ -32,7 +28,7 @@
         },
         {
             id: '4',
-            description: 'Облака',
+            description: 'Mood',
             createdAt: new Date(),
             author: 'Varya',
             photoLink: 'wQB-mrma10k.jpg',
@@ -41,7 +37,7 @@
         },
         {
             id: '5',
-            description: 'Вокзал',
+            description: 'Trains',
             createdAt: new Date(),
             author: 'Varya',
             photoLink: 'dCndhz-Z3Kc.jpg',
@@ -49,7 +45,7 @@
         },
         {
             id: '6',
-            description: 'Сердце города',
+            description: 'Big city',
             createdAt: new Date(),
             author: 'Varya',
             photoLink: '44_a1nojpWM.jpg',
@@ -59,7 +55,7 @@
         },
         {
             id: '7',
-            description: 'Закат',
+            description: 'Evening',
             createdAt: new Date(),
             author: 'Varya',
             photoLink: 'Ywpky192Hmk.jpg',
@@ -68,7 +64,7 @@
         },
         {
             id: '8',
-            description: 'Вечер',
+            description: 'Beauty',
             createdAt: new Date(),
             author: 'Varya',
             photoLink: 'M5pa9KK5VOo.jpg',
@@ -92,7 +88,7 @@
             photoLink: 'R-AJ1QlSSSU.jpg',
             hashtags: ['home'],
             likes: ['cars', 'taxi']
-        },
+        },*/
     ]
 
     var Filter = {
@@ -100,8 +96,12 @@
         hashtags: ['mama', 'papa'],
         data: 0
     };
+    let modulFirst = (function () {
+            function compareDates(a, b) {
+                return b.createdAt - a.createdAt;
+            }
 
-    function getPhotoPosts(skip, top, filterConfig){
+    let  getPhotoPosts = function(skip, top, filterConfig){
         photoPosts.sort(compareDates);
         var authTemp = filterConfig.author || 0;
         var dataTemp = filterConfig.data || 0;
@@ -192,7 +192,7 @@
         }
     }
 
-    function getPhotoPost(id){
+    let getPhotoPost=function(id){
         for(i = 0; i < photoPosts.length; i++){
             if(id == photoPosts[i].id){
                 return photoPosts[i];
@@ -223,7 +223,7 @@
         return false;
     }
 
-    function addPhotoPost(post){
+    let addPhotoPost=function(post){
         if(validatePhotoPost(post) == true) {
             photoPosts.push(post);
             return true;
@@ -232,7 +232,7 @@
         }
     }
 
-    function removePhotoPost(id){
+    let removePhotoPost=function(id){
         if(photoPosts.some(function(post){return post.id == id})) {
             for (i = 0; i < photoPosts.length; i++) {
                 if (photoPosts[i].id == id) {
@@ -245,7 +245,7 @@
     }
 
 
-    function editPost(id, post){
+    let editPost=function(id, post){
         if(photoPosts.some(function(post){return post.id == id})) {
             tempDescr = post.description || 0;
             tempPhoto = post.photoLink || 0;
@@ -275,23 +275,12 @@
             return false;
         }
     }
-
-    var filerFound = {
-        author: 'Varya',
-        hashtags: ['картошка', 'супчик'],
-    }
-
-    var pp = getPhotoPost(20);
-    console.log(pp);
-    validatePhotoPost(filerFound);
-    var OnePost = {
-        id: '22',
-        description: '1',
-        createdAt: new Date(),
-        author: '1',
-        photoLink: '2',
-        hashtags: ['3'],
-        likes: ['4', '5', '6']
-    }
-    editPost(10, OnePost);
-})();
+            return {
+                getPhotoPosts,
+                getPhotoPost,
+                validatePhotoPost,
+                addPhotoPost,
+                editPost,
+                removePhotoPost,
+            }
+        })();
