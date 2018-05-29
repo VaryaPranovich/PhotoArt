@@ -1,0 +1,156 @@
+.UserDecriprtionClass{
+    padding: 2px -1em;
+    position: absolute;
+    top: 15px;
+    left: 21.5em;
+}
+.textComment{
+    color: lavenderblush;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+    float: left;
+
+}
+.like{
+    color: #e3bd8c;
+    font-size: 15px;
+    witdh: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 0px;
+    float: left;
+}
+.thumb{
+    /*position:relative;*/
+    top: 10px;
+
+}
+.LoadButton{
+    position: fixed;
+    top: 5500px;
+    left: 1100px;
+    z-index: 2;
+}
+.userPhoto{
+    position: relative;
+    top:-2em;
+    left:280px;
+    z-index: 3;
+}
+p1{
+    position: absolute;
+    top:0em;
+    left:0em;
+}
+.logo {
+    position: fixed;
+    top:0em;
+    left:1em;
+    z-index: 2;
+}
+body {
+    background-color: whitesmoke;
+    background-image: url("0d48c7f8b29eaee15f5581499aebe603.jpg");
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-attachment:fixed;
+    text-align: center;
+
+}
+.social{
+    max-height: 600px;
+    height: 600px;
+    position: fixed;
+    top:50px;
+    left:20px;
+    z-index: 2;
+
+}
+p{
+    font-size: 120%;
+    text-align:left;
+    text-decoration:underline;
+    position:relative;
+    top:540px;
+    left:1200px;
+}
+.search {
+    width: 35%;
+    position: absolute;
+    top: 50px;
+    left:60em;
+}
+
+.post{
+    width: 500px;
+    height: 480px;
+    margin-left: 90%;
+    margin-bottom: 50px;
+    padding-top: 5px;
+}
+
+.search input {
+    border: none;
+}
+.search .input {
+    width: 100%;
+    padding: 8px 37px 9px 15px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    background: #EEE;
+    font: 13px Tahoma, Arial, sans-serif;
+    color: #555;
+    outline: none;
+}
+.search .input:focus {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    background: #E8E8E8;
+    color: #333;
+}
+.search .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+    cursor: pointer;
+    background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+    opacity: 0.5;
+}
+.search .submit:hover {
+    opacity: 0.8;
+}
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+h2{
+    text-align:center;
+    position:absolute;
+    left:517px;
+    top:60px;
+    background: lavender;
+    border-left: 20px solid #ccc;
+    font-style: italic;
+    width: 19%;
+}
+A:link {
+    color: blue ;
+}
+A:visited {
+    color:darkred;
+}
+A:hover {
+    color: darkblue ;
+    text-decoration:none;
+    font-weight:bold;
+}
+A:active {
+    color: darkgreen;
+    text-decoration:none;
+    text-transform:uppercase;
+}
